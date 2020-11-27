@@ -1,6 +1,5 @@
 from lark import Lark
 import fin_stripped, propp_strings, dicts, x
-import f_func_test
 
 def load_grammar(file):
     s = str(open(file, 'r').read())
