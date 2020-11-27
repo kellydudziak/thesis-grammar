@@ -4,6 +4,8 @@ tales = {
            'moves' : {'acc' : [],
                       'not' : []},
            'target' : {'acc' : [],
+                       'not' : []},
+           'target_mod' : {'acc' : [],
                        'not' : []}},
 
 'full' :  {'funcs' : {'acc' : [],
@@ -11,12 +13,16 @@ tales = {
            'moves' : {'acc' : [],
                       'not' : []},
            'target' : {'acc' : [],
+                       'not' : []},
+           'target_mod' : {'acc' : [],
                        'not' : []}},
 
 'prepless' :  {'funcs' : {'acc' : [],
-                         'not' : []},
+                          'not' : []},
                'moves' : {'acc' : [],
-                         'not' : []},
+                          'not' : []},
                'target' : {'acc' : [],
+                           'not' : []},
+               'target_mod' : {'acc' : [],
                            'not' : []}}
 }

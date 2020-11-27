@@ -5,8 +5,10 @@ def load_grammar(file):
     s = str(open(file, 'r').read())
     return Lark(('r"""' + s + '"""'), start='t', cache='false', parser='lalr')
 
-# ? if I store the grammars as load_grammar(file), is that executed each time I call that dict value? Or is the return value stored
-grammars = {'moves' : load_grammar('f_moves.txt'), 'funcs' : load_grammar('f_funcs.txt')}
+grammars = {'moves' : load_grammar('f_moves.txt'),
+            'funcs' : load_grammar('f_funcs.txt'),
+            'target' : load_grammar('f_target.txt'),
+            'target_mod' : load_grammar('f_target_mod.txt')}
 strings = {'propp' : propp_strings.stripped,
            'full' : fin_stripped.full_dict,
            'prepless' : fin_stripped.prepless_dict}
@@ -22,6 +24,5 @@ def parse(_print):
                 except:
                     dicts.tales[k][k2]['not'].append(k1)
 
-# TODO: separating print trees from accepted lists
 parse(True)
 x.print_dicts()

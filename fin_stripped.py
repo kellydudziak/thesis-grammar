@@ -44,4 +44,3 @@ def parse_grams():
             # for each grammar in the list, try parsing
             print(k + v)
 
-parse_grams()
