@@ -1,0 +1,50 @@
+start: a | up | d | ef
+a: A (a | b | c | d | up | ef | o)
+b: B (c | up)
+c: C (b | up | ef)
+up: UP (t | hi | d | ef | g)
+d: D (d | ef)
+ef: (E F | E | F) (ef | hi | a | up | d | g | k | t | down | pr | rs | w)
+g: G (ef | a | w | k)
+hi: (H I | H | I) (hi | k | down | w)
+k: K (k | t | down | w)
+t: T (g | pr)
+down: DOWN (hi | ef | pr | w)?
+pr: PR (down | rs | d)
+rs: RS (rs | pr | ef | down | w | o | up | q)?
+o: O (q | ef)
+q: Q (w | ex)
+ex: EX u
+u: U w
+w: W down?
+
+A: "A"
+B: "B"
+D: "D"
+C: "C"
+E: "E"
+F: "F"
+G: "G"
+H: "H"
+I: "I"
+J: "J"
+K: "K"
+L: "L"
+M: "M"
+N: "N"
+PR: "Pr"
+RS: "Rs"
+Q: "Q"
+UP: "up"
+DOWN: "down"
+EX: "Ex"
+T: "T"
+U: "U"
+W: "W"
+O: "O"
+ALPHA: "alpha"
+BETA: "beta"
+GAMMA: "gamma"
+ZETA: "zeta"
+ETA: "eta"
+THETA: "theta"
